@@ -7,9 +7,10 @@ const sessionSchema = new Schema({
     artist: String,
     shot_by: String,
     release_date: String,
+    release_year: Number,
     poster: String
 })
 
-const Session = model("Song", sessionSchema)
+export const MusicSession = model("Song", sessionSchema)
 
-export default Session
+export const FreeStyleSession = model("FreeStyle", sessionSchema)

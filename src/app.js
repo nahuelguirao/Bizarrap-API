@@ -2,7 +2,8 @@ import express from "express";
 import { config } from "dotenv";
 import cors from 'cors'
 import mongoose from "mongoose";
-import router from './routes/sessionsRoutes.js'
+import musicRouter from './routes/sessionsRoutes.js'
+import freeStyleRouter from "./routes/freeStyleRoutes.js";
 
 config()
 
@@ -17,7 +18,10 @@ mongoose.connect(process.env.MONGO_URL, { dbName: process.env.MONGO_DB_NAME })
 const db = mongoose.connection
 
 //Uses session router
-app.use('/sessions', router)
+app.use('/sessions/music', musicRouter)
+
+//Uses freestyle session router
+app.use('/sessions/freestyle', freeStyleRouter)
 
 //Listening
 const port = process.env.PORT
