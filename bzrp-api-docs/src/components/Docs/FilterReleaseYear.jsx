@@ -11,11 +11,11 @@ export function FilterReleaseYear() {
             <p className="paragraphNote">*Note you can mix release year filter with shot_by filter</p>
             <div className="urlContainer">
                 <h4>Freestyle example</h4>
-                <p>URL <span className="urlLink">http://localhost:3000/sessions/freestyle<span className="redSpan">?year=2019</span></span></p>
+                <p>URL <span className="urlLink">https://bizarrap-api-production.up.railway.app/sessions/freestyle<span className="redSpan">?year=2019</span></span></p>
             </div>
             <div className="urlContainer">
                 <h4>Music session example</h4>
-                <p>URL <span className="urlLink">http://localhost:3000/sessions/music<span className="redSpan">?year=2023</span></span></p>
+                <p>URL <span className="urlLink">https://bizarrap-api-production.up.railway.app/sessions/music<span className="redSpan">?year=2023</span></span></p>
             </div>
             <div className="docsMainLinkContainer">
                 <Link to={"/docs/freestyle-sessions"} className="docLink">Prev: Freestyle sessions</Link>

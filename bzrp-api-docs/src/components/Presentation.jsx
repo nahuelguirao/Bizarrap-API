@@ -1,4 +1,5 @@
 import { IoMdGlasses } from "react-icons/io";
+import { Link } from 'react-router-dom'
 
 export function Presentation() {
     return (
@@ -15,11 +16,11 @@ export function Presentation() {
                     <h4>
                         <span className="importantWord">Free</span> API to get full information about Music and Freestyle sessions of <span className="importantWord">Bizarrap</span>.
                     </h4>
-                    <p>*Created using Express + Mongo DB</p>
+                    <p>*Created using Express + Mongo DB and deployed in Railway</p>
                 </section>
                 <section className="mainSectionButtons">
-                    <button>Music sessions examples</button>
-                    <button>Freestyle sessions examples</button>
+                    <Link to={"/docs/music-sessions"}><button>Music sessions examples</button></Link>
+                    <Link to={"/docs/freestyle-sessions"}><button>Freestyle sessions examples</button></Link>
                 </section>
             </section>
             <img src="/bzrp.jpg" className="bzrpImg" alt="Bizarrap image" />
