@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #dbdbdb;
+  color: #202020;
+  box-sizing: border-box;
+}
+
+.importantWord {
+  color: red;
+}
+
+.header {
+  height: 7vh;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #dbdbdb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header a {
+  text-decoration: none;
+  color: #202020;
+  transition: 200ms;
+}
+
+.header a:hover {
+  transform: scale(1.1);
+  color: #213696;
+}
+
+.header h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mainAllContainer {
+  height: 70vh;
+  margin-top: 100px;
+  padding: 50px 20px;
+}
+
+.mainHeaderDiv {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.mainHeaderDiv h1 {
+  font-size: 2.5rem;
+}
+
+.mainHeaderDiv h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.mainHeaderSpan {
+  padding-top: 4px;
+  font-size: 3.5rem;
+  margin-right: 16px;
+}
+
+.mainSection {
+  padding-top: 20px;
+}
+
+.mainSection h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.mainSection p {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.mainSectionButtons {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.mainSectionButtons button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 16px;
+  width: 250px;
+  cursor: pointer;
+  transition: 200ms;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.mainSectionButtons button:hover {
+  transform: scale(1.1);
+  color: #213696;
+}
+
+.bzrpImg {
+  display: none;
+}
+
+@media (min-width: 577px) {
+  .header {
+    padding: 10px 10%;
+  }
+
+  .mainAllContainer {
+    padding: 50px 10%;
+  }
+
+  .mainSectionButtons {
+    flex-direction: row;
+  }
+}
+
+
+@media (min-width: 964px) {
+  .bzrpImg {
+    display: block;
+    filter: brightness(80%);
+    border-radius: 500px;
+    opacity: .95;
+    position: absolute;
+    right: 5%;
+    top: 70px
+  }
+
+  .mainAllContainer {
+    display: flex;
+    margin: 150px auto 0;
+    max-width: 1000px;
+  }
+
+  .mainSectionAllContainer {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .bzrpImg {
+    right: 10%;
+  }
+
+  .mainHeaderDiv h1 {
+    font-size: 5rem;
+  }
+
+  .mainHeaderSpan {
+    font-size: 5rem;
+  }
+
+  .mainSection {
+    font-size: 3rem;
+  }
+
+  .mainSection p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .bzrpImg {
+    right: 20%;
+  }
+}

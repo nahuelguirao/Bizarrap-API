@@ -1,0 +1,97 @@
+.getTag {
+    background-color: greenyellow;
+    padding: 0 10px;
+    border-radius: 100vmax;
+    margin-right: 5px;
+}
+
+.musicContainer {
+    padding: 0 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.musicContainerQuickReview {
+    margin-bottom: 20px;
+}
+
+pre {
+    margin-top: 30px;
+    max-width: 100%;
+    padding: 30px 20px;
+    background-color: #202020;
+    color: white;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+code {
+    display: block;
+    max-width: 100%;
+    font-size: 1.2rem;
+    overflow: auto;
+}
+
+.urlContainer {
+    margin-top: 30px;
+    background-color: #F0F0F0;
+    padding: 10px 20px;
+    border-radius: 100vmax;
+    width: fit-content;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.urlLink {
+    margin-left: 10px;
+    font-weight: 800;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.codeRightP {
+    margin-left: 20px;
+}
+
+.urlSpan {
+    color: yellow;
+}
+
+.blueSpan {
+    color: #66D8EF;
+}
+
+.redSpan {
+    color: rgb(223, 94, 94);
+}
+
+.filterSpan {
+    background-color: orange;
+}
+
+.marginTop50px {
+    margin-top: 50px;
+}
+
+.marginBottom100px {
+    margin-bottom: 100px;
+}
+
+.paragraphNote {
+    margin-top: 10px;
+}
+
+footer {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media (min-width: 577px) {
+    .musicSessionContainer {
+        padding: 0 10%;
+    }
+}

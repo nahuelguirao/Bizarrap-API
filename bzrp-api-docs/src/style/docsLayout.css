@@ -1,0 +1,126 @@
+.docsLayout {
+    display: grid;
+    align-items: baseline;
+    gap: 50px;
+    min-height: 83vh;
+}
+
+.docsLayout aside {
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #dbdbdb;
+}
+
+.docsLayout aside h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.docsIndex {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.docsIndex a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #202020;
+    transition: 200ms;
+}
+
+.docsIndex a:hover {
+    color: #213696;
+}
+
+.docsMain {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-height: 55vh;
+}
+
+.docLink {
+    text-decoration: none;
+    color: #213696;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.docLink:hover {
+    transform: scale(1.1);
+}
+
+.nextPage {
+    margin: 20px 0;
+    align-self: flex-end;
+}
+
+.docsMainLinkContainer {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.docsMain pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    margin-bottom: 40px;
+}
+
+.docsMain .urlContainer {
+    padding: 10px 45px;
+}
+
+.urlContainer h4 {
+    margin-bottom: 20px;
+}
+
+@media(min-width: 577px) {
+    .docsLayout aside {
+        padding: 20px 10%;
+    }
+
+    .docsMain {
+        padding: 20px 10%;
+    }
+
+    .docsMainLinkContainer {
+        margin: 50px 0 0 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:950px) {
+    .docsLayout {
+        align-items: normal;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .docsLayout aside {
+        padding-top: 50px;
+        box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.24);
+        border-bottom-right-radius: 16px;
+    }
+
+    .docsMain {
+        height: 100%;
+        padding-top: 50px;
+    }
+
+    .docsIndex {
+        margin-top: 25px;
+        gap: 25px;
+    }
+
+    .docsIndex a:hover {
+        transform: scale(1.1);
+    }
+}
