@@ -9,14 +9,14 @@ export function FreeStyleSessions() {
             </h3>
             <p className="paragraphNote">*If all is ok it will return and array of sessions</p>
             <div className="urlContainer">
-                <p>URL <span className="urlLink">https://bizarrap-api-production.up.railway.app/sessions/freestyle</span></p>
+                <p>URL <span className="urlLink">https://bizarrap-api.up.railway.app/sessions/freestyle</span></p>
             </div>
             <h3 className="marginTop50px">
                 <span className="getTag">GET</span> SPECIFIC Freestyle Sessions
             </h3>
             <p className="paragraphNote">*If all is ok it will return a session</p>
             <div className="urlContainer">
-                <p>URL <span className="urlLink">https://bizarrap-api-production.up.railway.app/sessions/freestyle/<span className="redSpan">$sessionNumber</span></span></p>
+                <p>URL <span className="urlLink">https://bizarrap-api.up.railway.app/sessions/freestyle/<span className="redSpan">$sessionNumber</span></span></p>
             </div>
             <div className="docsMainLinkContainer">
                 <Link to={"/docs/music-sessions"} className="docLink">Prev: Music sessions</Link>

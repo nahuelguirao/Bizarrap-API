@@ -14,3 +14,5 @@ const sessionSchema = new Schema({
 export const MusicSession = model("Song", sessionSchema)
 
 export const FreeStyleSession = model("FreeStyle", sessionSchema)
+
+
