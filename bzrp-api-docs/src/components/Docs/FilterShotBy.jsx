@@ -11,11 +11,11 @@ export function FilterShotBy() {
             <p className="paragraphNote">*Note you can mix shot_by filter with release_year filter</p>
             <div className="urlContainer">
                 <h4>Freestyle example</h4>
-                <p>URL <span className="urlLink">https://bizarrap-api.up.railway.app/sessions/freestyle<span className="redSpan">?shot=@GianGuaglianone</span></span></p>
+                <p>URL <span className="urlLink">https://bizarrap-api.vercel.app/sessions/freestyle<span className="redSpan">?shot=@GianGuaglianone</span></span></p>
             </div>
             <div className="urlContainer">
                 <h4>Music session example</h4>
-                <p>URL <span className="urlLink">https://bizarrap-api.up.railway.app/sessions/music<span className="redSpan">?shot=@pedro.colmeiro</span></span></p>
+                <p>URL <span className="urlLink">https://bizarrap-api.vercel.app/sessions/music<span className="redSpan">?shot=@pedro.colmeiro</span></span></p>
             </div>
             <div className="docsMainLinkContainer">
                 <Link to={"/docs/filter/release-year"} className="docLink">Prev: Filter by release_year</Link>
